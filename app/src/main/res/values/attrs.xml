@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TableView">
+        <attr name="columnSize" format="integer" />
+        <attr name="rowHeight" format="float" />
+    </declare-styleable>
+    <declare-styleable name="PaintLayout">
+        <attr name="strokeColor" format="color" />
+        <attr name="radiusX" format="float" />
+        <attr name="radiusY" format="float" />
+        <attr name="imgSrc" format="reference" />
+        <attr name="strokeSize" format="integer" />
+    </declare-styleable>
+</resources>

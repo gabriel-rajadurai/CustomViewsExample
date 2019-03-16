@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gabriel.tictaccustomview.PaintActivity">
+
+    <com.gabriel.tictaccustomview.views.PaintLayout
+        android:id="@+id/pview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_layout"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        app:radiusX="15"
+        app:radiusY="15"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/bt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pencil_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pencil" />
+
+            <Button
+                android:id="@+id/circle_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Circle" />
+
+            <Button
+                android:id="@+id/rect_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rectangle" />
+
+            <Button
+                android:id="@+id/oval_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oval" />
+
+            <Button
+                android:id="@+id/roundrect_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rounded Rectangle" />
+
+            <Button
+                android:id="@+id/erase_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Erase" />
+
+            <Button
+                android:id="@+id/clr_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear" />
+
+            <Button
+                android:id="@+id/undo_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Undo" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
